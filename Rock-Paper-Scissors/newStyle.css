@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0b0d5;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    background-color: #d17ba5;
+    color: #fff;
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.choices {
+    display: flex;
+    gap: 2rem;
+    margin: 20px 0;
+}
+
+.choice {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.choice:hover {
+    background-color: #a7dfc2;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.score-board {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+#user-score,
+#comp-score {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#msg-box {
+    background-color: #7BE0AD;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.msgRed {
+    background-color: #f28b82;
+}
+
+.msgGreen {
+    background-color: #81c995;
+}
+
+.msgWhite {
+    background-color: #E7E5E5;
+    color: black;
+}
+
+.resetBtn {
+    background-color: #d17ba5;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.resetBtn:hover {
+    background-color: #b96590;
+}
